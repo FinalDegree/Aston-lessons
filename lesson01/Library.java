@@ -4,14 +4,15 @@ public class Library {
 
     static {
         books = new Book[100];
-        addBook(new Book("Сердца трёх", "Джек Лондон", 1918, true));
-        addBook(new Book("Приключения Тома Сойера", "Марк Твен", 1876, true));
-        addBook(new Book("Маракотова бездна", "Артур Конан Дойл"));
-        addBook(new Book("Позолоченный век", "Марк Твен", 1873, true));
-        addBook(new Book("Приключения Гекльберри Финна", "Марк Твен"));
+        Library library = new Library();
+        library.addBook(new Book("Сердца трёх", "Джек Лондон", 1918, true));
+        library.addBook(new Book("Приключения Тома Сойера", "Марк Твен", 1876, true));
+        library.addBook(new Book("Маракотова бездна", "Артур Конан Дойл"));
+        library.addBook(new Book("Позолоченный век", "Марк Твен", 1873, true));
+        library.addBook(new Book("Приключения Гекльберри Финна", "Марк Твен"));
     }
 
-    public static void addBook(Book book){
+    public void addBook(Book book){
         books[booksCount] = book;
         booksCount++;
     }
