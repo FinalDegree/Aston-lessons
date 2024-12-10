@@ -1,5 +1,5 @@
 public class Library {
-    private static Book[] books;
+    public static Book[] books;
     private static int booksCount = 0;
 
     static {
