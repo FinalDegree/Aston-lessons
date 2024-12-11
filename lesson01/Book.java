@@ -19,8 +19,10 @@ public class Book {
     }
 
     public void borrowBook(){
-        if(isAvailable) isAvailable = false;
-        else System.out.println("Книга уже занята");
+        if(isAvailable) {
+            isAvailable = false;
+            System.out.println("Книга взята");
+        } else System.out.println("Книга уже занята");
     }
 
     public void returnBook(){
