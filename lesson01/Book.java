@@ -1,8 +1,8 @@
 public class Book {
     private String title;
-    public String author;
+    private String author;
     private int year;
-    public boolean isAvailable;
+    private boolean isAvailable;
 
     public Book(String title, String author, int year, boolean isAvailable){
         this.title = title;
@@ -16,6 +16,14 @@ public class Book {
         this.author = author;
         this.year = 0;
         this.isAvailable = true;
+    }
+
+    public boolean getIsAvialable() {
+        return isAvailable;
+    }
+
+    public String getAuthor() {
+        return author;
     }
 
     public void borrowBook(){

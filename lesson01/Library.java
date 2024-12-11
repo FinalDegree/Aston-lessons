@@ -9,13 +9,13 @@ public class Library {
 
     public void printAvailableBooks(){
         for(int i = 0; i < booksCount; ++i){
-            if(books[i].isAvailable) books[i].displayInfo();
+            if(books[i].getIsAvialable()) books[i].displayInfo();
         }
     }
 
     public void findBooksByAuthor(String author){
          for(int i = 0; i < booksCount; ++i){
-            if(books[i].author.equalsIgnoreCase(author)) books[i].displayInfo();
+            if(books[i].getAuthor().equalsIgnoreCase(author)) books[i].displayInfo();
         }
     }
 }
