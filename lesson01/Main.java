@@ -33,5 +33,6 @@ public class Main{
         
         library.printAvailableBooks();
         book10.borrowBook();
+        library.printAvailableBooks();
     }
 }
